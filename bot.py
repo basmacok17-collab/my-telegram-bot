@@ -11,8 +11,10 @@ from geopy.geocoders import Nominatim
 # ================= НАСТРОЙКИ БОТА =================
 import os
 
-TOKEN = os.getenv("8962515706:AAHjbT5A97y8lRwY2hZXhf_q2K16o2TFvtY")
-ADMIN_ID = int(os.getenv("ADMIN_ID", "8278973263"))
+# Просто сохраняем токен и ID текстом в переменные
+TOKEN = "8962515706:AAHMua91YLPFvKk2DJv0281PHieVqA8wZq0"
+ADMIN_ID = 8278973263
+
 # ==================================================
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
