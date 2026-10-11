@@ -12,7 +12,7 @@ from geopy.geocoders import Nominatim
 import os
 
 # Просто сохраняем токен и ID текстом в переменные
-TOKEN = "8962515706:AAHMua91YLPFvKk2DJv0281PHieVqA8wZq0"
+TOKEN = "8962515706:AAHVua9lYLPEvKk2D3vB28iPhieVqA8wZq0"
 ADMIN_ID = 8278973263
 
 # ==================================================
