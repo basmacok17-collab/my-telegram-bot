@@ -194,11 +194,13 @@ async def process_location(message: types.Message, state: FSMContext):
     await state.clear()
 
 async def main():
+    # Удаляем вебхук и запускаем бесконечный опрос сервера Telegram
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
     try:
+        # Корректный запуск асинхронного цикла для aiogram 3.x
         asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
         logging.info("Бот выключен.")
